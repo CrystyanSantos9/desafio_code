@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+	</head>
+	
+	
+	
+	
+	<body>
+	
+	<button onclick="troca()">Clique para trocar</button>
+	
+	<button onclick="Ajx()">Faz requisicao</button>
+	
+	<button onclick="Enviar()">Envia requisicao</button>
+	
+	<script>
+	
+	function troca() {
+	
+	var ar =[];
+	var str = 'lcetqtntlw tyepwwtrpynp fdflwwj mpled ylefclw defatotej. fyvyzhy';
+	
+
+   var dict = {a:'l',b:'m',c:'n',d:'o',e:'p',f:'q',g:'r',h:'s',i:'t',j:'u',k:'v',l:'w',m:'x',n:'y',o:'z',p:'a',q:'b',r:'c',s:'d',t:'e',u:'f',v:'g',w:'h',x:'i',y:'j',z:'k'}
+
+   var re = new RegExp(`[${ Object.keys(dict).join('') }]`,'g');
+
+    var res = str.replace(re,(m => dict[m] ) );
+
+    console.log(res)
+   
+}
+
+	function Ajx() {
+
+	$.ajax({
+    url:"https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=d561b87f071eaaebf9f782b3a884a1fd6df0ed14",
+    dataType: 'json',
+    success: function(response){
+		console.log(response);
+    }
+});
+
+   }
+   
+   
+
+   
+  
+  
+
+   
+	
+	
+	</script>
+	
+	
+	
+	</body>
+	
+	
+	
+	
+</html>

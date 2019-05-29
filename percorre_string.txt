@@ -1,0 +1,6 @@
+var ar =[];
+	var str = "lcetqtntlw tyepwwtrpynp fdflwwj mpled ylefclw defatotej. fyvyzhy"
+	
+	for (var i = 0; i < str.length; i++) {
+   console.log(str.charAt(i).
+   

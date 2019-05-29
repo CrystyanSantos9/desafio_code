@@ -1,0 +1,8 @@
+https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=d561b87f071eaaebf9f782b3a884a1fd6df0ed14
+
+
+
+
+for (var i = 0; i < str.length; i++) {
+	
+    console.log(str.charAt(i).replace("l","o")); // result: "this is a test"
